@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
-    "express": "~4.7.2"
+    "db-migrate": "^0.10.2",
+    "db-migrate-pg": "^0.2.5",
+    "express": "~4.7.2",
+    "pg-promise": "^7.3.2"
   },
   "scripts": {
     "start": "node server.js"
