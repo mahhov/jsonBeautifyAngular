@@ -3,6 +3,6 @@
     "driver": "pg",
     "host": "localhost",
     "user": "manukhovanesian",
-    "database": "cardsandboxdb"
+    "database": "jsonbeautifyangular"
   }
 }

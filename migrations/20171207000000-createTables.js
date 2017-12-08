@@ -12,14 +12,12 @@ exports.setup = function (options, seedLink) {
 
 exports.up = function (db, callback) {
     return db.createTable('visitor', {
-        date: TIMESTAMP
+        date: 'TIMESTAMP'
     });
 };
 
 exports.down = function (db, callback) {
-    return db.dropTable('visitor').then(() => {
-        db.dropTable('authentication');
-    });
+    db.dropTable('visitor');
 };
 
 exports._meta = {

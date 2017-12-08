@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const pgp = require('pg-promise')();
-const db = pgp(process.env.DATABASE_URL || 'postgres://manukhovanesian@localhost:5432/jsonBeautifyAngular');
+const db = pgp(process.env.DATABASE_URL || 'postgres://manukhovanesian@localhost:5432/jsonbeautifyangular');
 
 var incrementCount = () => {
     db.none('INSERT INTO visitor (date) VALUES (CURRENT_TIMESTAMP)').catch((err) => {
@@ -19,7 +19,7 @@ var wrapper = (req, res, next) => {
 app.use(wrapper);
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 app.get('/count', (req, res) => {
-    db.one('SELECT count(*) from count').then((count) => {
+    db.one('SELECT count(*) from visitor').then((count) => {
         res.setHeader('Content-Type', 'text/plain');
         res.status(200).send(count);
     }).catch(() => {
