@@ -3,14 +3,14 @@ const app = express();
 const pgp = require('pg-promise')();
 const db = pgp(process.env.DATABASE_URL || 'postgres://manukhovanesian@localhost:5432/jsonbeautifyangular');
 
-var incrementCount = () => {
+let incrementCount = () => {
     db.none('INSERT INTO visitor (date) VALUES (CURRENT_TIMESTAMP)').catch((err) => {
         console.log('error updating visitor table:');
         console.log(err);
     });
 };
 
-var wrapper = (req, res, next) => {
+let wrapper = (req, res, next) => {
     if (req.url === '/')
         incrementCount();
     express.static(__dirname + '/public')(req, res, next);
