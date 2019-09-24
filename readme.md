@@ -1,5 +1,5 @@
 ### demo
-https://json-beautify-angular.herokuapp.com/
+https://mahhov.github.io/jsonBeautifyAngular/public/
 
 ### giys
 

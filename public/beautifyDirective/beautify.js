@@ -123,6 +123,8 @@ angular.module('jsonBeautifyAngular')
                 shortcutService.addShortcut('Enter', false, true, $scope.addSessionCallback);
                 shortcutService.addShortcut('[', true, false, $scope.selectPairLeft);
                 shortcutService.addShortcut(']', true, false, $scope.selectPairRight);
+
+                $scope.showMigrationMessage = location.hostname !== 'mahhov.github.io';
             }
         }
     });

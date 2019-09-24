@@ -1,5 +1,7 @@
 .beautify {
   color: blue; }
+  .beautify .migration-message {
+    background: #fed; }
   .beautify input.filter {
     width: 100%; }
   .beautify pre, .beautify textarea {
@@ -18,5 +20,3 @@
     text-align: center; }
   .beautify .red {
     color: red; }
-
-/*# sourceMappingURL=beautify.css.map */

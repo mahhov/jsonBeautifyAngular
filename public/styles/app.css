@@ -1,5 +1,7 @@
 .beautify {
   color: blue; }
+  .beautify .migration-message {
+    background: #fed; }
   .beautify input.filter {
     width: 100%; }
   .beautify pre, .beautify textarea {
@@ -21,9 +23,9 @@
 
 .tabs .tab {
   margin-right: 15px; }
+
 .tabs input {
   border: 1px solid; }
+
 .tabs .div-row-bottom {
   margin-bottom: 25px; }
-
-/*# sourceMappingURL=app.css.map */
