@@ -13,7 +13,7 @@
     "style": "node-sass public/ -o public/styles/"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "author": "manuk",
   "license": "ISC",
